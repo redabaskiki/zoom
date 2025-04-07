@@ -89,7 +89,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
             link={
               type === "recordings"
                 ? (meeting as CallRecording).url
-                : `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${
+                : `${process.env.NEXT_PUBLIC_Basic_Url}/meeting/${
                     (meeting as Call).id
                   }`
             }
